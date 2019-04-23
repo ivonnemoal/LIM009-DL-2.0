@@ -63,25 +63,48 @@ function paint(datos){
 const data = document.getElementById('data');
 function getData() {
   fetch('https://raw.githubusercontent.com/Laboratoria/LIM009-DL-2.0/master/src/data/potter.json')
-    .then(res => res.json())
-    .then(res => { 
-      for(let i = 0; i<res.length; i++){
-        let ele = res[i];
-        paintAll(ele)
-      } 
+    .then(data => data.json())
+    .then(data => {
+      console.log(data);
+      for (let i = 0; i < data.length; i++) {
+        let age = 2019 - data[i].yearOfBirth;
+        let ele = data[i];
+        let genero = data[i].gender;
+        paintAll(ele,age);
+        //filterData(genero);
+      }
     });
 }
 
-function paintAll(ele){
-    let all = `<div class="mt-5" id='magic'>
-      <p>Nombre:${ele.name}</p>
-      <p>Actor:${ele.actor}</p>
-      <p>Casa:${ele.house}</p>
-      <div >
-        <img src= ${ele.image} width="100px" class="img-fluid"/>
+function paintAll(ele,age) {
+  let all = `<div class="cards">
+      <figure class="cards-img"><img src= ${ele.image} class=""/></figure>
+      <div class="text"><p><strong>${ele.name}</strong></p>
+      <p>${ele.house ? ele.house : 'No tiene casa'}</p></div>
+      <div class="texto">
+      <p>Especie</br><strong>${ele.species}</strong></p>
+      <p>Rol</br><strong>${ele.hogwartsStudent ? 'Estudiante' : 'Staff'}</strong></p>
+      <p>Edad</br><strong>${age !== 2019 ? age : 'No tiene fecha de nacimiento'}</strong></p>
+      <p>Actor</br><strong>${ele.actor}</strong></p>
       </div>
       </div>
     `
-  
-  document.getElementById('data').innerHTML+= all;
+  document.getElementById('data').innerHTML += all;
 }
+
+
+ function filterData(genero) { 
+  if(genero !== 'male'){
+    return genero;
+  } else {
+    return genero;
+  }
+}
+
+const ordenarAZ = (a,b) => {
+  if (a.name > b.name) {
+    return 1;
+  } else {
+    return -1;
+  }
+};

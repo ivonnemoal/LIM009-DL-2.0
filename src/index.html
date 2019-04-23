@@ -9,31 +9,49 @@
 
 <body>
   <main id="root">
-    <h1>Bienvenida</h1>
+    <aside>
+      <div id="logo" class="logo">
+        <img src="imagenHarry/1.jpg" alt="">
+      </div>
+      <div id="Order" class="Order">
+        <p><strong>Ordenar por edad</strong></p>
+        <button class="btn1">Ascendente</button>
+        <button class="btn2">Descendente</button>
+      </div>
+      <div id="Filter" class="Filter">
+        <p><strong>Filtrar por</strong></p>
+        <select name="Genero" id="Genero" class="Genero">
+          <option value="">Genero</option>
+          <option value="opcion-1">Femenino</option>
+          <option value="opcion-2">Masculino</option>
+        </select>
+        <select name="Rol" id="Rol" class="Rol">
+          <option value="">Rol</option>
+          <option value="opcion-1">Estudiante</option>
+          <option value="opcion-2">Staff</option>
+        </select>
+        <select name="House" id="House" class="House">
+          <option value="">Casa</option>
+          <option value="opcion-1">Gryffindor</option>
+          <option value="opcion-2">Slytherin</option>
+          <option value="opcion-1">Ravenclaw</option>
+          <option value="opcion-2">Hufflepuff</option>
+        </select>
+
+        </select>
+
+      </div>
+      <button class="btn-danger" onclick="getData()">Obtener</button>
+    </aside>
+
+    <section id="data">
+      <div class="title">
+        <h1>Personajes de la Saga de Harry Potter</h1>
+      </div>
+    </section>
+
   </main>
 
-  <div class="container my-5 text-center">
-    <button class="btn btn-danger w-100" onclick="getData()">Obtener</button>
-  </div>
-
-  <div id="data"></div>
-
-
-  <div>
-    <table class="table">
-      <thead>
-        <tr>
-          <th scope='col'></th>
-          <th scope='col'></th>
-          <th scope='col'></th>
-          <th scope='col'></th>
-        </tr>
-      </thead>
-      <tbody id='tabla'>
-
-      </tbody>
-    </table>
-  </div>
 
 
 
