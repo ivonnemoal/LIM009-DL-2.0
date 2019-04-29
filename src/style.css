@@ -1,16 +1,16 @@
 body {
     display: grid;
-    width: 1200px;
+    width: 1300px;
     margin: 0px;
     padding: 0px;
-    
+    color: whitesmoke;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-aside{
+aside {
     background-color: peru;
     width: 20%;
-    height: 550px;
+    height: 600px;
     display: flex;
     flex: auto;
     flex-wrap: wrap;
@@ -18,10 +18,10 @@ aside{
     float: left;
 }   
 
-section{
+section {
     margin-top: 0px;
     padding: 2em 1em ;
-    background-image:url();
+    background-image:url(imagenHarry/fondo2.jpg);
     display: flex;
     flex: auto;
     flex-wrap: wrap;
@@ -31,8 +31,8 @@ section{
     float: right;
 }
 
-.cards{
-    background-color:rgba(0,0,0,0.2);
+.cards {
+    background-color:rgba(0,0,0,0.7);
     width: 250px;
     height: auto;
     margin: 20px;
@@ -44,49 +44,47 @@ section{
     box-sizing: border-box;   
 }
 
-.text{
+.text {
     margin-top: 0px;
     align-items: center;
     justify-content: center;
     text-align: center;
     box-sizing: border-box;
 }
-.texto{
+
+.texto {
     margin-top: 0px;
     align-items: left;
     justify-content: left;
     text-align: left;
     box-sizing: border-box;
 }
-.cards-img{
-    
-  align-items: center;
-  position: relative;
-  width: 150px;
-  height: 150px;
-  overflow: hidden;
-  border-radius: 50%;
- 
+
+.cards-img {
+    align-items: center;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
 }
 
-
-.cards-img img{
+.cards-img img {
     width: 100%;
     height: auto;
-    
-    
 }
 
-.title{
+.title {
    width: 100%;
    color: whitesmoke;
    font-size: 20px;
 }
-.Order{
+
+.Order {
     width: 100%;
 }
 
-.btn1{
+.btn1 {
     width:100%;
     text-decoration: none;
     padding: 3px;
@@ -105,10 +103,9 @@ section{
 .btn1:hover {
     opacity: 0.6;
     text-decoration: none;
-
 }
 
-.btn2{
+.btn2 {
     width:100%;
     text-decoration: none;
     padding: 3px;
@@ -127,10 +124,9 @@ section{
 .btn2:hover {
     opacity: 0.6;
     text-decoration: none;
-
 }
 
-.btn-danger{
+.btn-danger {
     width:100%;
     text-decoration: none;
     padding: 3px;
@@ -144,13 +140,13 @@ section{
     border-radius: 15px;
     border: 3px double #eff5ef;
     cursor: pointer;
-
 }
+
 .btn-danger:hover {
     opacity: 0.6;
     text-decoration: none;
-
 }
+
 .Filter{
     width: 100%;
 }
@@ -199,22 +195,22 @@ section{
   }
  
   .logo{
-
     position: relative;
     width: 250px;
-    height: 250px;
+    height: 180px;
     overflow: hidden;
     box-sizing: border-box;
-   
+    padding: 10px;
+    border: 2px solid #fffffff5; 
   }
   
   
   .logo img{
       width: 100%;
       height: auto;
-      
-      
+      border-radius: 5px;  
   }
+
 display:flex;
-  flex-direction: column;
-  margin: auto;
+flex-direction: column;
+margin: auto;
