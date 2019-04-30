@@ -230,21 +230,23 @@ option {
     }
     .logo {
         position: relative;
-        width: 100%;
+        width: 33%;
         height: auto;
         box-sizing: border-box;
         border: 2px solid #fffffff5; 
+        align-items: center;
     }
     .logo img {
         width: absolute;
+        
     }  
     .Order {
         margin-top: 5%;
-        width: 45%;
+        width: 30%;
     }
     .Filter {
         padding: 1em ;
         margin-top: 0%;
-        width: 45%;   
+        width: 30%;   
     }
 }
