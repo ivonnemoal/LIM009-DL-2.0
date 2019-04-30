@@ -8,37 +8,33 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 main {
- width: 100%;
- margin:0 auto;
- overflow: hidden;
+    width: 100%;
+    margin:0 auto;
+    overflow: hidden;
 }
-
 aside {
     background-color: peru;
     width: 20%;
+    height: 100%;
     display: flex;
     flex: auto;
     flex-wrap: wrap;
     box-sizing: border-box;
     float: left;
-    padding-block-end: 273%;
-    
+    padding-block-end: 270%; 
 }   
-
 section {
     display: flex;
     flex: auto;
-    flex-wrap: wrap;
+    flex-wrap: wrap;    
     box-sizing: border-box;
     justify-content: center;
     float: right;
     margin-top: 0px;
     padding: 2em 1em ;
     background-image:url(imagenHarry/fondo2.jpg);
-    width: 80%;
-    
+    width: 80%;   
 }
-
 .personajes{
     margin-top: 0px;
     padding: 2em 1em ;
@@ -50,7 +46,6 @@ section {
     justify-content: center;
     float: right;
 }
-
 .cards {
     background-color:rgba(0,0,0,0.7);
     width: 250px;
@@ -63,7 +58,6 @@ section {
     flex-direction: column;
     box-sizing: border-box;   
 }
-
 .text {
     margin-top: 0px;
     align-items: center;
@@ -71,7 +65,6 @@ section {
     text-align: center;
     box-sizing: border-box;
 }
-
 .texto {
     margin-top: 0px;
     align-items: left;
@@ -79,7 +72,6 @@ section {
     text-align: left;
     box-sizing: border-box;
 }
-
 .cards-img {
     align-items: center;
     position: relative;
@@ -88,23 +80,19 @@ section {
     overflow: hidden;
     border-radius: 50%;
 }
-
 .cards-img img {
     width: 100%;
     height: auto;
 }
-
 .title {
-   width: 100%;
-   color: whitesmoke;
-   font-size: 20px;
+    width: 100%;
+    color: whitesmoke;
+    font-size: 20px;
 }
-
 .Order {
     margin-top: 20%;
     width: 100%;
 }
-
 .btn1 {
     margin-top: 4%;
     width:100%;
@@ -121,12 +109,10 @@ section {
     border: 3px double #eff5ef;
     cursor: pointer;
 }
-
 .btn1:hover {
     opacity: 0.6;
     text-decoration: none;
 }
-
 .btn2 {
     margin-top: 4%;
     width:100%;
@@ -143,12 +129,10 @@ section {
     border: 3px double #eff5ef;
     cursor: pointer;
 }
-
 .btn2:hover {
     opacity: 0.6;
     text-decoration: none;
 }
-
 .btn-danger {
     width:100%;
     text-decoration: none;
@@ -164,30 +148,27 @@ section {
     border: 3px double #eff5ef;
     cursor: pointer;
 }
-
 .btn-danger:hover {
     opacity: 0.6;
     text-decoration: none;
 }
-
-.Filter{
+.Filter {
     margin-top: 20%;
     width: 100%;
 }
-
-.Genero{
-  margin-top: 4%;
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 3em;
-  line-height: 3;
-  background: #b09182;
-  overflow: hidden;
-  border-radius: .25em;
-  border: 2px solid #ccc;
+.Genero {
+    margin-top: 4%;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 3em;
+    line-height: 3;
+    background: #b09182;
+    overflow: hidden;
+    border-radius: .25em;
+    border: 2px solid #ccc;
 }
-.Rol{
+.Rol {
     margin-top: 4%;
     position: relative;
     display: block;
@@ -198,8 +179,8 @@ section {
     overflow: hidden;
     border-radius: .25em;
     border: 2px solid #ccc;
-  }
-  .House{
+}
+.House{
     margin-top: 4%;
     position: relative;
     display: block;
@@ -210,18 +191,21 @@ section {
     overflow: hidden;
     border-radius: .25em;
     border: 2px solid #ccc;
-  }
+}
 
-  select {
+select {
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0 0 0 .5em;
     color: #fffffff5;
     cursor: pointer;
-  }
- 
-  .logo{
+}
+option { 
+    color:whitesmoke;
+    background-color: #ffffff33; 
+}
+.logo {
     position: relative;
     width: 250px;
     height: 180px;
@@ -229,13 +213,11 @@ section {
     box-sizing: border-box;
     padding: 10px;
     border: 2px solid #fffffff5; 
-  }
-  
-  
-  .logo img{
-      width: 100%;
-      height: auto;
-      border-radius: 5px;  
+  }   
+.logo img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;  
   }
 
 @media(max-width: 767px){
@@ -246,23 +228,23 @@ section {
     section {
         width: 100%
     }
-    .logo{
+    .logo {
         position: relative;
         width: 100%;
         height: auto;
         box-sizing: border-box;
         border: 2px solid #fffffff5; 
-      }
-      .logo img{
-          width: absolute;
-      }  
-      .Order {
+    }
+    .logo img {
+        width: absolute;
+    }  
+    .Order {
         margin-top: 5%;
         width: 45%;
-      }
-      .Filter {
+    }
+    .Filter {
         padding: 1em ;
         margin-top: 0%;
-        width: 45%;
-       
+        width: 45%;   
     }
+}

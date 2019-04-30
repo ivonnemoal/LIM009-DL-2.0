@@ -43,8 +43,6 @@ const filtrarRolStaff = (datos) => {
   return newStaff;
 };
 
-/*window.example = example;*/
-
 window.potter = {
   filtrarGenero,
   filtrarCasa,
