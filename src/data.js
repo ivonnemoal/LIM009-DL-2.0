@@ -7,7 +7,7 @@ const Descendente = (datos) => {
     } else {
       return -1;
     }
-  }); 
+  });
   return order;
 };
 
@@ -25,7 +25,7 @@ const Ascendente = (datos) => {
 const filtrarGenero = (datos, genero) => {
   const newGener = datos.filter(elemento => elemento.gender === genero);
   return newGener;
-}; 
+};
 
 
 const filtrarCasa = (datos, casa) => {
@@ -33,12 +33,10 @@ const filtrarCasa = (datos, casa) => {
   return newHouse;
 };
 
-
 const filtrarRolStudent = (datos) => {
   const newStudent = datos.filter(elemento => elemento.hogwartsStudent);
   return newStudent;
 };
-
 
 const filtrarRolStaff = (datos) => {
   const newStaff = datos.filter(element => element.hogwartsStaff);

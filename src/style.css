@@ -1,33 +1,53 @@
-body {
-    display: grid;
-    width: 1300px;
+*{
     margin: 0px;
     padding: 0px;
+}
+body {
+    box-sizing: border-box;
     color: whitesmoke;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+main {
+ width: 100%;
+ margin:0 auto;
+ overflow: hidden;
 }
 
 aside {
     background-color: peru;
     width: 20%;
-    height: 600px;
     display: flex;
     flex: auto;
     flex-wrap: wrap;
     box-sizing: border-box;
     float: left;
+    padding-block-end: 273%;
+    
 }   
 
 section {
-    margin-top: 0px;
-    padding: 2em 1em ;
-    background-image:url(imagenHarry/fondo2.jpg);
     display: flex;
     flex: auto;
     flex-wrap: wrap;
     box-sizing: border-box;
     justify-content: center;
+    float: right;
+    margin-top: 0px;
+    padding: 2em 1em ;
+    background-image:url(imagenHarry/fondo2.jpg);
     width: 80%;
+    
+}
+
+.personajes{
+    margin-top: 0px;
+    padding: 2em 1em ;
+    width: 80%;
+    display: flex;
+    flex: auto;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
     float: right;
 }
 
@@ -81,10 +101,12 @@ section {
 }
 
 .Order {
+    margin-top: 20%;
     width: 100%;
 }
 
 .btn1 {
+    margin-top: 4%;
     width:100%;
     text-decoration: none;
     padding: 3px;
@@ -92,7 +114,7 @@ section {
     padding-right: 10px;
     font-family: sans-serif;
     font-weight: 300;
-    font-size: 25px;
+    font-size: 20px;
     color: #e9ece9;
     background-color: #b09182;
     border-radius: 15px;
@@ -106,6 +128,7 @@ section {
 }
 
 .btn2 {
+    margin-top: 4%;
     width:100%;
     text-decoration: none;
     padding: 3px;
@@ -113,7 +136,7 @@ section {
     padding-right: 10px;
     font-family: sans-serif;
     font-weight: 300;
-    font-size: 25px;
+    font-size: 20px;
     color: #e9ece9;
     background-color: #b09182;
     border-radius: 15px;
@@ -148,10 +171,12 @@ section {
 }
 
 .Filter{
+    margin-top: 20%;
     width: 100%;
 }
 
 .Genero{
+  margin-top: 4%;
   position: relative;
   display: block;
   width: 100%;
@@ -163,6 +188,7 @@ section {
   border: 2px solid #ccc;
 }
 .Rol{
+    margin-top: 4%;
     position: relative;
     display: block;
     width: 100%;
@@ -174,6 +200,7 @@ section {
     border: 2px solid #ccc;
   }
   .House{
+    margin-top: 4%;
     position: relative;
     display: block;
     width: 100%;
@@ -211,6 +238,31 @@ section {
       border-radius: 5px;  
   }
 
-display:flex;
-flex-direction: column;
-margin: auto;
+@media(max-width: 767px){
+    aside {
+        width:100%;
+        padding-block-end: 0%;
+    } 
+    section {
+        width: 100%
+    }
+    .logo{
+        position: relative;
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        border: 2px solid #fffffff5; 
+      }
+      .logo img{
+          width: absolute;
+      }  
+      .Order {
+        margin-top: 5%;
+        width: 45%;
+      }
+      .Filter {
+        padding: 1em ;
+        margin-top: 0%;
+        width: 45%;
+       
+    }
